@@ -8,7 +8,7 @@ var contentNode3 = document.getElementById('desc');
 var component3 = <p>Master's student at San Diego State University</p>;  
 
 var contentNode4 = document.getElementById('link');
-var component4 = <form action="https://github.com/mukthagowdara">
+var component4 = <form action="https://github.com/mukthagowdara/FullStack">
 <button type="submit">VIEW MY GITHUB REPO</button>
 </form>;  
 
