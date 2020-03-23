@@ -1,0 +1,30 @@
+scalar GraphQLDate
+
+type Product {
+  _id: ID!
+  id: Int!
+  name: String!
+  price: Int
+  category: String!
+  image: String
+}
+
+"Toned down Issue, used as inputs, without server generated values."
+input ProductInputs {
+  name: String!
+  price: Int
+  category: String!
+  image: String
+}
+
+##### Top level declarations
+
+type Query {
+  about: String!
+  productList: [Product!]!
+}
+
+type Mutation {
+  setAboutMessage(message: String!): String
+  productAdd(issue: ProductInputs!): Product!
+}
